@@ -81,7 +81,7 @@ E = D|D -> E
 D = C|D | C
 C = N|C & N
 N = !N|V|(E)
-V = [A..Z][A..Z|0..9|, 39]*
+V = [A..Z][A..Z|0..9|']*
 -}
 
 infixl 8 :&
