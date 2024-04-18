@@ -42,8 +42,8 @@ import Parser
 
 main :: IO ()
 main = do
-    let input = "A | (B & C) -> D"
-    case parseExpression input of
-        Left err -> putStrLn $ "Error: " ++ err
-        Right expr -> putStrLn $ "Parsed expression: " ++ show expr
+  let input = "A | (B & C) -> D"
+  case runParser parseFile input of
+    Just expr -> putStrLn $ "Parsed expression: " ++ show expr
+    _ -> putStrLn "Parse error"
 ```
