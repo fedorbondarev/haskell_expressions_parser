@@ -6,7 +6,7 @@ This project implements a monadic parser for logic expressions in Haskell.
 
 The logic context-free grammar used in this project is defined as follows:
 
-```math
+```
 File = Expression
 Expression = Disjunction | Disjunction -> Expression
 Disjunction = Conjunction | Disjunction | Conjunction
